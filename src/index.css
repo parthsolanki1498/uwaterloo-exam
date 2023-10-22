@@ -11,3 +11,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* .calendar-ui {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.calendar-event {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.event-date {
+  font-weight: bold;
+}
+
+.event-details {
+  margin-top: 5px;
+} */
+
+/* FullCalendar Styles */
+.full-calendar {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Event Styles */
+.fc-event {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 2px;
+}
+
+.fc-event:hover {
+  background-color: #0056b3;
+}
+
+/* Event Title Styles */
+.fc-event-title {
+  font-size: 16px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Event More Link Styles */
+.fc-event-more {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 2px;
+}
+
+.fc-event-more:hover {
+  background-color: #0056b3;
+}
