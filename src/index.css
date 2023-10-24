@@ -37,9 +37,13 @@ code {
 
 /* FullCalendar Styles */
 .full-calendar {
+  background: 
+    linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)),
+    url('https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/1024px-University_of_Waterloo_seal.svg.png') center center no-repeat;
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
+  opacity: ;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -82,4 +86,18 @@ code {
 
 .fc-event-more:hover {
   background-color: #0056b3;
+}
+
+/* FullCalendar Styles with Bold Dates */
+.fc-day {
+  font-weight: bold; /* Set the font-weight to bold for date cells */
+}
+
+.fc-view {
+  border: 2px solid #000; /* 2px solid black border */
+}
+
+/* Add a border inside each day cell */
+.fc-daygrid-day-frame,.fc-day-top {
+  border-bottom: 1px solid #000; /* 1px solid black border inside each cell */
 }
