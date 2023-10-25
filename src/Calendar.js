@@ -10,7 +10,15 @@ const Calendar = () => {
   const apiKey = '9D8DA60E1ECE47CD81D8BC49AD219D41'; // Replace with your actual API key
 
   useEffect(() => {
-    fetch(`https://openapi.data.uwaterloo.ca/v3/ExamSchedules?apiKey=${apiKey}`)
+
+    const requestOptions = {
+      method: 'GET',
+      headers: {
+        'X-API-KEY': apiKey,
+      },
+    };
+
+    fetch(`https://openapi.data.uwaterloo.ca/v3/ExamSchedules?apiKey=${apiKey}`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         // Assuming the data structure in the response is an array of exams
